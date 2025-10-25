@@ -88,10 +88,10 @@ export function ProjectsSection() {
             {projects.map((project) => (
               <Card
                 key={project.id}
-                className='border-gray-700/20 dark:border-white/25 flex flex-col hover:border-primary/30 transition-all duration-300 overflow-hidden'
+                className='border-gray-700/20 pt-0 dark:border-white/25 flex flex-col hover:border-primary/30 transition-all duration-300'
               >
                 {project.cover_image_url && (
-                  <div className='relative h-72 overflow-hidden mx-6 rounded-lg border border-gray-700/20 dark:border-white/25'>
+                  <div className='relative h-72 overflow-hidden mx-4 sm:mx-6 mt-4 sm:mt-6 rounded-lg border border-gray-700/20 dark:border-white/25'>
                     <Image
                       src={project.cover_image_url}
                       alt={project.title}
@@ -103,8 +103,13 @@ export function ProjectsSection() {
                     />
                   </div>
                 )}
-                <CardHeader className='-mb-4'>
-                  <CardTitle className='text-2xl'>{project.title}</CardTitle>
+                <CardHeader>
+                  <CardTitle className='text-2xl truncate'>
+                    {project.title}
+                  </CardTitle>
+                  <p className='text-muted-foreground truncate pt-1'>
+                    {project.tagline}
+                  </p>
                 </CardHeader>
                 <CardContent className='flex-1 flex flex-col'>
                   <div className='mb-6'>

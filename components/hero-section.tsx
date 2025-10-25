@@ -35,7 +35,7 @@ export function HeroSection() {
           Full-Stack Developer
         </h2>
         <p className='text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance'>
-          Crafting performance-driven, user-friendly experiences.
+          Building scalable, reliable systems that power seamless experiences.
         </p>
         <div className='flex flex-col sm:flex-row gap-4 justify-center'>
           <Button

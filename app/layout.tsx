@@ -11,7 +11,10 @@ const _geistMono = Geist_Mono({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Aravind Sathesh',
   description:
-    'Professional portfolio of Aravind Sathesh, a full-stack developer specializing in React, Next.js, and Node.js',
+    'Professional portfolio of Aravind Sathesh, a full-stack developer.',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

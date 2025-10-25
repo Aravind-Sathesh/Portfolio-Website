@@ -11,12 +11,15 @@ import { createClient } from '@/lib/supabase/client';
 
 interface Project {
   id: string;
+  slug: string;
   title: string;
-  description: string;
-  technologies: string[];
-  github_url: string | null;
+  tagline: string;
+  cover_image_url: string | null;
+  skills: string[];
   live_url: string | null;
-  image_url: string | null;
+  repo_url: string | null;
+  is_featured: boolean;
+  display_order: number;
 }
 
 export function ProjectsSection() {
@@ -29,8 +32,11 @@ export function ProjectsSection() {
         const supabase = createClient();
         const { data, error } = await supabase
           .from('projects')
-          .select('*')
-          .order('created_at', { ascending: false });
+          .select(
+            'id, slug, title, tagline, cover_image_url, skills, live_url, repo_url, is_featured, display_order'
+          )
+          .order('display_order', { ascending: true })
+          .order('project_date', { ascending: false });
 
         if (error) throw error;
         setProjects(data || []);
@@ -84,10 +90,10 @@ export function ProjectsSection() {
                 key={project.id}
                 className='border-gray-700/20 dark:border-white/25 flex flex-col hover:border-primary/30 transition-all duration-300 overflow-hidden'
               >
-                {project.image_url && (
+                {project.cover_image_url && (
                   <div className='relative h-72 overflow-hidden mx-6 rounded-lg border border-gray-700/20 dark:border-white/25'>
                     <Image
-                      src={project.image_url}
+                      src={project.cover_image_url}
                       alt={project.title}
                       fill
                       style={{
@@ -101,33 +107,19 @@ export function ProjectsSection() {
                   <CardTitle className='text-2xl'>{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className='flex-1 flex flex-col'>
-                  <p className='text-base text-muted-foreground mb-6 flex-1 leading-relaxed'>
-                    {project.description}
-                  </p>
                   <div className='mb-6'>
                     <div className='flex flex-wrap gap-2'>
-                      {project.technologies.map((tech) => (
+                      {project.skills.map((skill) => (
                         <span
-                          key={tech}
+                          key={skill}
                           className='text-sm bg-primary/10 text-primary border border-primary/20 px-3 py-1.5 rounded-full backdrop-blur-sm'
                         >
-                          {tech}
+                          {skill}
                         </span>
                       ))}
                     </div>
                   </div>
                   <div className='flex gap-3'>
-                    <Button
-                      variant='outline'
-                      size='lg'
-                      asChild
-                      className='flex-1 backdrop-blur-sm'
-                    >
-                      <Link href={`/projects/${project.id}`}>
-                        <ArrowRight className='h-4 w-4 mr-2' />
-                        View Details
-                      </Link>
-                    </Button>
                     {project.live_url && (
                       <Button
                         variant='outline'
@@ -140,11 +132,12 @@ export function ProjectsSection() {
                           target='_blank'
                           rel='noopener noreferrer'
                         >
-                          Check it out <ExternalLink className='h-5 w-5' />
+                          <ExternalLink className='h-4 w-4 mr-2' />
+                          Live Deployment
                         </a>
                       </Button>
                     )}
-                    {project.github_url && (
+                    {project.repo_url && (
                       <Button
                         variant='outline'
                         size='lg'
@@ -152,14 +145,26 @@ export function ProjectsSection() {
                         className='backdrop-blur-sm'
                       >
                         <a
-                          href={project.github_url}
+                          href={project.repo_url}
                           target='_blank'
                           rel='noopener noreferrer'
                         >
-                          <Github className='h-5 w-5' />
+                          <Github className='h-4 w-4 mr-2' />
+                          Code
                         </a>
                       </Button>
                     )}
+                    <Button
+                      variant='default'
+                      size='lg'
+                      asChild
+                      className='ml-auto backdrop-blur-sm'
+                    >
+                      <Link href={`/projects/${project.slug}`}>
+                        View Details
+                        <ArrowRight className='h-4 w-4 ml-2' />
+                      </Link>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>

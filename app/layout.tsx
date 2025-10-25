@@ -2,6 +2,7 @@ import type React from 'react';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
+import { PageTransition } from '@/components/page-transition';
 import './globals.css';
 
 const _geist = Geist({ subsets: ['latin'] });
@@ -37,6 +38,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans antialiased`}>
+        <PageTransition />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

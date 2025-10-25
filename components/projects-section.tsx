@@ -124,13 +124,46 @@ export function ProjectsSection() {
                       ))}
                     </div>
                   </div>
-                  <div className='flex gap-3'>
+                  <div className='flex flex-col sm:flex-row gap-3'>
+                    {/* First row on mobile: Code and Details side by side */}
+                    <div className='flex gap-3 sm:contents'>
+                      {project.repo_url && (
+                        <Button
+                          variant='outline'
+                          size='lg'
+                          asChild
+                          className='flex-1 sm:flex-none backdrop-blur-sm'
+                        >
+                          <a
+                            href={project.repo_url}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                          >
+                            <Github className='h-4 w-4 mr-2' />
+                            Code
+                          </a>
+                        </Button>
+                      )}
+                      <Button
+                        variant='default'
+                        size='lg'
+                        asChild
+                        className='flex-1 sm:flex-none sm:ml-auto backdrop-blur-sm'
+                      >
+                        <Link href={`/projects/${project.slug}`}>
+                          View Details
+                          <ArrowRight className='h-4 w-4 ml-2' />
+                        </Link>
+                      </Button>
+                    </div>
+
+                    {/* Second row on mobile: Live Deployment full width */}
                     {project.live_url && (
                       <Button
                         variant='outline'
                         size='lg'
                         asChild
-                        className='backdrop-blur-sm'
+                        className='w-full sm:w-auto backdrop-blur-sm'
                       >
                         <a
                           href={project.live_url}
@@ -142,34 +175,6 @@ export function ProjectsSection() {
                         </a>
                       </Button>
                     )}
-                    {project.repo_url && (
-                      <Button
-                        variant='outline'
-                        size='lg'
-                        asChild
-                        className='backdrop-blur-sm'
-                      >
-                        <a
-                          href={project.repo_url}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                        >
-                          <Github className='h-4 w-4 mr-2' />
-                          Code
-                        </a>
-                      </Button>
-                    )}
-                    <Button
-                      variant='default'
-                      size='lg'
-                      asChild
-                      className='ml-auto backdrop-blur-sm'
-                    >
-                      <Link href={`/projects/${project.slug}`}>
-                        View Details
-                        <ArrowRight className='h-4 w-4 ml-2' />
-                      </Link>
-                    </Button>
                   </div>
                 </CardContent>
               </Card>

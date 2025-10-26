@@ -35,6 +35,7 @@ export function ProjectsSection() {
           .select(
             'id, slug, title, tagline, cover_image_url, skills, live_url, repo_url, is_featured, display_order'
           )
+          .eq('is_featured', true)
           .order('display_order', { ascending: true })
           .order('project_date', { ascending: false });
 

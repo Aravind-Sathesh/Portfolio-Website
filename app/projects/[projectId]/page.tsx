@@ -77,11 +77,14 @@ export default async function ProjectPage({
     });
   };
 
-  // Combine cover image with gallery images for carousel
+  const galleryImages = Array.isArray(typedProject.gallery_image_urls)
+    ? typedProject.gallery_image_urls
+    : [];
+
   const allImages = [
     ...(typedProject.cover_image_url ? [typedProject.cover_image_url] : []),
-    ...(typedProject.gallery_image_urls || []),
-  ];
+    ...galleryImages,
+  ].filter((url, index, self) => url && self.indexOf(url) === index);
 
   return (
     <main className='min-h-screen bg-background text-foreground'>

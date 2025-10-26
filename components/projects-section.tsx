@@ -92,7 +92,7 @@ export function ProjectsSection() {
                 className='border-gray-700/20 pt-0 dark:border-white/25 flex flex-col hover:border-primary/30 transition-all duration-300'
               >
                 {project.cover_image_url && (
-                  <div className='relative h-72 overflow-hidden mx-4 sm:mx-6 mt-4 sm:mt-6 rounded-lg border border-gray-700/20 dark:border-white/25'>
+                  <div className='relative h-48 sm:h-56 md:h-72 overflow-hidden mx-4 sm:mx-6 mt-4 sm:mt-6 rounded-lg border border-gray-700/20 dark:border-white/25'>
                     <Image
                       src={project.cover_image_url}
                       alt={project.title}
@@ -113,12 +113,12 @@ export function ProjectsSection() {
                   </p>
                 </CardHeader>
                 <CardContent className='flex-1 flex flex-col'>
-                  <div className='mb-6'>
-                    <div className='flex flex-wrap gap-2'>
+                  <div className='mb-6 -mx-6 px-6 sm:mx-0 sm:px-0'>
+                    <div className='flex sm:flex-wrap gap-2 overflow-x-auto sm:overflow-x-visible pb-2 sm:pb-0 scrollbar-hide'>
                       {project.skills.map((skill) => (
                         <span
                           key={skill}
-                          className='text-sm bg-primary/10 text-primary border border-primary/20 px-3 py-1.5 rounded-full backdrop-blur-sm'
+                          className='text-sm bg-primary/10 text-primary border border-primary/20 px-3 py-1.5 rounded-full backdrop-blur-sm whitespace-nowrap shrink-0'
                         >
                           {skill}
                         </span>

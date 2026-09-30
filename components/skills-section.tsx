@@ -64,7 +64,7 @@ export function SkillsSection({ skills }: { skills: Skill[] }) {
 
                   return (
                     <div key={category} className='space-y-4'>
-                      <h3 className='text-2xl font-semibold text-foreground'>
+                      <h3 className='text-2xl font-semibold text-foreground text-center md:text-left'>
                         {category}
                       </h3>
                       <div className='rounded-lg border border-border overflow-hidden shadow-sm'>
@@ -93,7 +93,7 @@ export function SkillsSection({ skills }: { skills: Skill[] }) {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
               {iconCategories.map((category) => (
                 <div key={category} className='space-y-6'>
-                  <h3 className='text-2xl font-semibold text-foreground'>
+                  <h3 className='text-2xl font-semibold text-foreground text-center md:text-left'>
                     {category}
                   </h3>
                   <div className='grid grid-cols-2 sm:grid-cols-4 gap-6 justify-items-center'>

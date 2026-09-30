@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Docker Foundations Professional Certificate",
+    "issuer": "Docker",
+    "date": "2026-06",
+    "logo": "docker.svg",
+    "url": "https://www.linkedin.com/learning/certificates/f6d2d74a6ed2cf7dc31bc8efd5ae33573f358350c9c2c19832b50215b8ae1d40"
+  },
+  {
+    "title": "Model Context Protocol: Advanced Topics",
+    "issuer": "Anthropic",
+    "date": "2026-06",
+    "logo": "anthropic.svg",
+    "url": "https://www.linkedin.com/learning/certificates/3cf6dda5dee2222395f56e019a11e3fe64bdf5403cf02dbd20529747b44d9479"
+  },
+  {
+    "title": "Hands-On AI: Building AI Agents with MCP and A2A",
+    "issuer": "LinkedIn Learning",
+    "date": "2026-06",
+    "logo": "linkedin-learning.png",
+    "url": "https://www.linkedin.com/learning/certificates/d6754d664c796fd503e7d48df8385057f57d2cd3af17f6ffe1b6aa4fa2d104b6"
+  },
+  {
+    "title": "Building AI Agents: Advanced Techniques for Developers",
+    "issuer": "LinkedIn Learning",
+    "date": "2026-06",
+    "logo": "linkedin-learning.png",
+    "url": "https://www.linkedin.com/learning/certificates/d49b6e1b87a3d3c1165082e248f9633063ac727903cc24ddddd6ee1fdf4ecc32"
+  },
+  {
+    "title": "The Complete Full-Stack Web Development Bootcamp",
+    "issuer": "Udemy",
+    "date": "2025-06",
+    "logo": "udemy.svg",
+    "url": "https://www.udemy.com/certificate/UC-5653baaa-3457-4031-ba8e-91b5515db87e/"
+  },
+  {
+    "title": "Frontend Developer (React) Certificate",
+    "issuer": "HackerRank",
+    "date": "2025-05",
+    "logo": "hackerrank.svg",
+    "url": "https://www.hackerrank.com/certificates/9a0fdff7cd05"
+  }
+]

@@ -4,9 +4,10 @@ import { HeroSection } from '@/components/hero-section';
 import { SkillsSection } from '@/components/skills-section';
 import { ExperienceSection } from '@/components/experience-section';
 import { ProjectsSection } from '@/components/projects-section';
+import { CertificationsSection } from '@/components/certifications-section';
 import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
-import { getExperience, getProjects, getSkills } from '@/lib/content';
+import { getCertifications, getExperience, getProjects, getSkills } from '@/lib/content';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <SkillsSection skills={getSkills()} />
         <ExperienceSection experiences={getExperience()} />
         <ProjectsSection projects={getProjects().filter((p) => p.is_featured)} />
+        <CertificationsSection certifications={getCertifications()} />
         <ContactSection />
         <Footer />
       </div>

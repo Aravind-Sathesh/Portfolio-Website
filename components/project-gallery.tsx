@@ -32,8 +32,10 @@ export function ProjectGallery({ images, projectTitle }: ProjectGalleryProps) {
                 <Image
                   src={imageUrl}
                   alt={`${projectTitle} screenshot ${index + 1}`}
-                  fill
-                  className='object-contain'
+                  width={1600}
+                  height={1600}
+                  sizes='(min-width: 1024px) 1024px, 100vw'
+                  className='w-auto h-auto max-w-full max-h-full rounded-md border border-border shadow-sm'
                   priority={index === 0}
                 />
               </div>

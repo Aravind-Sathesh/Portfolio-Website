@@ -1,0 +1,14 @@
+{
+  "title": "Pinnacle: Campus Placement API",
+  "tagline": "A multi-tenant NestJS backend for university placement cells, with per-organisation data isolation, a contract-first OpenAPI spec and a 90% test coverage gate.",
+  "category": "backend",
+  "status": "completed",
+  "project_date": "2026-09-08",
+  "is_featured": true,
+  "display_order": 1,
+  "skills": ["TypeScript", "NestJS", "Node.js", "Prisma", "PostgreSQL", "Redis", "BullMQ", "MinIO", "Docker", "Google OAuth", "Jest"],
+  "repo_url": null,
+  "live_url": null,
+  "cover": "cover.png",
+  "gallery": ["swagger.png"]
+}

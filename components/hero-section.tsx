@@ -31,9 +31,6 @@ export function HeroSection() {
         <h1 className='text-4xl sm:text-5xl lg:text-6xl font-semibold font-mono tracking-tight antialiased text-foreground mb-4 text-balance'>
           Aravind Sathesh
         </h1>
-        <h2 className='text-xl sm:text-2xl lg:text-3xl font-light text-foreground mb-6 text-balance uppercase'>
-          Full-Stack Developer
-        </h2>
         <p className='text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance'>
           Building scalable, reliable systems that power seamless experiences.
         </p>

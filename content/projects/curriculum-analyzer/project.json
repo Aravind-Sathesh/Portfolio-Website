@@ -1,0 +1,14 @@
+{
+  "title": "Curriculum Analyzer",
+  "tagline": "Turns a course handout into a Neo4j knowledge graph, and maps exam questions to the topics they test, all runnable on local models.",
+  "category": "ai_ml",
+  "status": "in_progress",
+  "project_date": "2026-09-25",
+  "is_featured": true,
+  "display_order": 12,
+  "skills": ["Python", "Neo4j", "LLM", "RAG", "Ollama", "Gemini", "Streamlit", "Pydantic", "Langfuse"],
+  "repo_url": null,
+  "live_url": null,
+  "cover": "cover.png",
+  "gallery": []
+}

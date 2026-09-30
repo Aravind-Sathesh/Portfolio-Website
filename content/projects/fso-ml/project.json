@@ -1,0 +1,28 @@
+{
+  "title": "FSO Comms with ML-Based Turbulence Compensation",
+  "tagline": "A novel GNN+CNN architecture that reconstructs and classifies optical communication signals from heavily distorted and occluded data, achieving 100% accuracy.",
+  "category": "ai_ml",
+  "status": "completed",
+  "project_date": "2025-05-31",
+  "is_featured": true,
+  "display_order": 3,
+  "skills": [
+    "PyTorch",
+    "Matplotlib",
+    "Deep Learning",
+    "CNN",
+    "GNN",
+    "Computer Vision",
+    "Quantization"
+  ],
+  "repo_url": "https://github.com/Aravind-Sathesh/FSO-x-ML",
+  "live_url": null,
+  "cover": "cover.png",
+  "gallery": [
+    "accuracy_history.png",
+    "cnn_loss_history.png",
+    "gnn_loss_history.png",
+    "oam_samples.png",
+    "train_petalled_sample_4_24.png"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "AskBITSians: Connect with Alumni",
+  "tagline": "A vibrant platform connecting BITS Pilani students with successful alumni for career guidance, academic support, and professional networking.",
+  "category": "web_app",
+  "status": "completed",
+  "project_date": "2025-08-15",
+  "is_featured": true,
+  "display_order": 5,
+  "skills": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Supabase",
+    "WebSocket",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Google OAuth",
+    "Netlify"
+  ],
+  "repo_url": "https://github.com/BPHC-ACM/AskBITSians/",
+  "live_url": "https://askbitsians.acmbphc.in/",
+  "cover": "cover.png",
+  "gallery": [
+    "SCR-20251026-iwvz.png",
+    "SCR-20251026-ixaa.png"
+  ]
+}

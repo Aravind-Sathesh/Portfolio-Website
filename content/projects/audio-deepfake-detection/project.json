@@ -1,0 +1,14 @@
+{
+  "title": "Privacy-Preserving Audio Deepfake Detection",
+  "tagline": "Research on detecting spoofed speech from privacy-protected audio tokens, so a detection server never has access to what was actually said.",
+  "category": "ai_ml",
+  "status": "completed",
+  "project_date": "2026-04-29",
+  "is_featured": true,
+  "display_order": 10,
+  "skills": ["Python", "PyTorch", "PyTorch Lightning", "Transformers", "Audio Processing", "Deep Learning"],
+  "repo_url": "https://github.com/Aravind-Sathesh/Audio-Deepfake-Detection",
+  "live_url": null,
+  "cover": "cover.png",
+  "gallery": ["results.png"]
+}

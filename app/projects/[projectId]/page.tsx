@@ -5,27 +5,16 @@ import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowLeft, Github, ExternalLink, Calendar } from 'lucide-react';
-import { createClient } from '@/lib/supabase/server';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { DotsBackground } from '@/components/dots-background';
 import { ProjectGallery } from '@/components/project-gallery';
+import { getProject, getProjects } from '@/lib/content';
 
-interface Project {
-  id: string;
-  slug: string;
-  title: string;
-  tagline: string;
-  cover_image_url: string | null;
-  skills: string[];
-  description_markdown: string | null;
-  gallery_image_urls: string[];
-  live_url: string | null;
-  repo_url: string | null;
-  project_date: string;
-  status: string;
-  category: string;
-  is_featured: boolean;
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getProjects().map((p) => ({ projectId: p.slug }));
 }
 
 export async function generateMetadata({
@@ -34,12 +23,7 @@ export async function generateMetadata({
   params: Promise<{ projectId: string }>;
 }) {
   const { projectId } = await params;
-  const supabase = await createClient();
-  const { data: project } = await supabase
-    .from('projects')
-    .select('*')
-    .eq('slug', projectId)
-    .single();
+  const project = getProject(projectId);
 
   return {
     title: project?.title
@@ -55,19 +39,11 @@ export default async function ProjectPage({
   params: Promise<{ projectId: string }>;
 }) {
   const { projectId } = await params;
-  const supabase = await createClient();
+  const typedProject = getProject(projectId);
 
-  const { data: project, error } = await supabase
-    .from('projects')
-    .select('*')
-    .eq('slug', projectId)
-    .single();
-
-  if (error || !project) {
+  if (!typedProject) {
     notFound();
   }
-
-  const typedProject = project as Project;
 
   // Format the date
   const formatDate = (dateString: string) => {
@@ -77,14 +53,10 @@ export default async function ProjectPage({
     });
   };
 
-  const galleryImages = Array.isArray(typedProject.gallery_image_urls)
-    ? typedProject.gallery_image_urls
-    : [];
-
   const allImages = [
     ...(typedProject.cover_image_url ? [typedProject.cover_image_url] : []),
-    ...galleryImages,
-  ].filter((url, index, self) => url && self.indexOf(url) === index);
+    ...typedProject.gallery_image_urls,
+  ];
 
   return (
     <main className='min-h-screen bg-background text-foreground'>

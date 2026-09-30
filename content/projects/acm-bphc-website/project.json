@@ -1,0 +1,19 @@
+{
+  "title": "ACM BPHC Website",
+  "tagline": "The official website for the ACM student chapter at BITS Pilani, Hyderabad Campus, serving as a hub for activities, events, and resources.",
+  "category": "web_app",
+  "status": "completed",
+  "project_date": "2025-03-31",
+  "is_featured": true,
+  "display_order": 11,
+  "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "shadcn/ui", "Supabase"],
+  "repo_url": "https://github.com/Aravind-Sathesh/ACM-Website",
+  "live_url": "https://acmbphc.in",
+  "cover": "cover.png",
+  "gallery": [
+    "SCR-20251026-jczx.png",
+    "SCR-20251026-jdel.png",
+    "SCR-20251026-jcwv.png",
+    "SCR-20251026-jdcu.png"
+  ]
+}

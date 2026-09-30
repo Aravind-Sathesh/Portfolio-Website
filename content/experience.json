@@ -1,0 +1,38 @@
+[
+  {
+    "title": "SDE Intern",
+    "company": "RingCentral Innovation",
+    "start_date": "2026-05-01",
+    "end_date": "2026-07-31",
+    "is_current": false,
+    "logo": "ringcentral-india.jpg",
+    "description": "Worked on an agentic AI analytics service that answers natural-language questions by breaking them into backend tool calls.\nBuilt the tools to resolve identity, define and rank templates, execute queries and ask clarifying questions, cutting model token usage by ~24%.\nCreated template queries for popular questions, separating them from free-form LLM workflows that use schema-backed generation.\nAdded features around the SDK layer, including streamed responses, inline charts, saved conversations, voice input/output and follow-up prompts."
+  },
+  {
+    "title": "Software Developer Intern",
+    "company": "GenoSaathi",
+    "start_date": "2025-05-01",
+    "end_date": "2025-07-31",
+    "is_current": false,
+    "logo": "genosaathi.jpg",
+    "description": "Engineered and deployed the new corporate website using React.js and Next.js for Server-Side Rendering (SSR).\nDeveloped a full-stack blogging platform, designing a PostgreSQL schema in Supabase and building REST APIs.\nArchitected a maintainable, component-driven frontend system with Tailwind CSS for a consistent user experience."
+  },
+  {
+    "title": "Summer Intern",
+    "company": "Walford Capitals LLP",
+    "start_date": "2025-03-01",
+    "end_date": "2025-05-31",
+    "is_current": false,
+    "logo": "walford-capitals-llp.jpg",
+    "description": "Designed and developed a responsive Next.js website as the frontend interface for the Quant teams' predictive model.\nIntegrated smooth user interactions using Framer Motion to enhance UX with the goal of improving user retention."
+  },
+  {
+    "title": "Summer Intern",
+    "company": "RingCentral India",
+    "start_date": "2024-06-01",
+    "end_date": "2024-07-31",
+    "is_current": false,
+    "logo": "ringcentral-india.jpg",
+    "description": "Developed a full-stack responsive application using React for the frontend and the SpringBoot for the backend.\nIntegrated OracleDB to manage data storage effectively, ensuring application scalability and data integrity.\nGained proficiency in JavaScript and React, applying these skills to create an intuitive and seamless user interface."
+  }
+]

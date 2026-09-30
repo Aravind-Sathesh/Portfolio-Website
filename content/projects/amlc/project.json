@@ -1,0 +1,14 @@
+{
+  "title": "Business Entity Resolution (Amazon ML Challenge 2026)",
+  "tagline": "A multilingual record-matching pipeline that links vendor records to a master business list, reaching 0.9836 macro F0.5 on the public leaderboard.",
+  "category": "ai_ml",
+  "status": "completed",
+  "project_date": "2026-09-28",
+  "is_featured": true,
+  "display_order": 8,
+  "skills": ["Python", "LightGBM", "PyTorch", "Hugging Face Transformers", "scikit-learn", "RapidFuzz", "AWS SageMaker"],
+  "repo_url": null,
+  "live_url": null,
+  "cover": "cover.png",
+  "gallery": ["leaderboard.png"]
+}

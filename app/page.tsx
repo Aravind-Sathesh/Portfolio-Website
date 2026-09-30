@@ -6,6 +6,7 @@ import { ExperienceSection } from '@/components/experience-section';
 import { ProjectsSection } from '@/components/projects-section';
 import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
+import { getExperience, getProjects, getSkills } from '@/lib/content';
 
 export default function Home() {
   return (
@@ -14,9 +15,9 @@ export default function Home() {
       <div className='relative z-10'>
         <Navbar />
         <HeroSection />
-        <SkillsSection />
-        <ExperienceSection />
-        <ProjectsSection />
+        <SkillsSection skills={getSkills()} />
+        <ExperienceSection experiences={getExperience()} />
+        <ProjectsSection projects={getProjects().filter((p) => p.is_featured)} />
         <ContactSection />
         <Footer />
       </div>

@@ -1,0 +1,14 @@
+{
+  "title": "Notes",
+  "tagline": "A native macOS scratchpad with titlebar tabs, multi-cursor editing, find and markdown preview, built in Swift around a CodeMirror 6 editor.",
+  "category": "desktop_app",
+  "status": "completed",
+  "project_date": "2026-09-24",
+  "is_featured": false,
+  "display_order": 13,
+  "skills": ["Swift", "Cocoa", "WKWebView", "CodeMirror", "JavaScript"],
+  "repo_url": null,
+  "live_url": null,
+  "cover": "cover.png",
+  "gallery": ["editor.png", "markdown-preview.png", "light-theme.png"]
+}

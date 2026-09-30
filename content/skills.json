@@ -1,0 +1,215 @@
+[
+  {
+    "name": "Large Language Models",
+    "category": "AI Development",
+    "type": "text-only"
+  },
+  {
+    "name": "Retrieval-Augmented Generation",
+    "category": "AI Development",
+    "type": "text-only"
+  },
+  {
+    "name": "Knowledge Graphs",
+    "category": "AI Development",
+    "type": "text-only"
+  },
+  {
+    "name": "Vector Databases",
+    "category": "AI Development",
+    "type": "text-only"
+  },
+  {
+    "name": "Transformers",
+    "category": "AI Development",
+    "type": "text-only"
+  },
+  {
+    "name": "Langfuse",
+    "category": "AI Development",
+    "type": "text-only"
+  },
+  {
+    "name": "PostgreSQL",
+    "category": "Databases & Storage",
+    "type": "icon"
+  },
+  {
+    "name": "MySQL",
+    "category": "Databases & Storage",
+    "type": "icon"
+  },
+  {
+    "name": "OracleDB",
+    "category": "Databases & Storage",
+    "type": "icon",
+    "svg": "oracledb.svg",
+    "color": "#F80000"
+  },
+  {
+    "name": "Redis",
+    "category": "Databases & Storage",
+    "type": "icon"
+  },
+  {
+    "name": "Neo4j",
+    "category": "Databases & Storage",
+    "type": "icon"
+  },
+  {
+    "name": "Prisma",
+    "category": "Databases & Storage",
+    "type": "icon"
+  },
+  {
+    "name": "Sequelize",
+    "category": "Databases & Storage",
+    "type": "icon"
+  },
+  {
+    "name": "Supabase",
+    "category": "Databases & Storage",
+    "type": "icon"
+  },
+  {
+    "name": "Docker",
+    "category": "DevOps & Tools",
+    "type": "icon"
+  },
+  {
+    "name": "Git",
+    "category": "DevOps & Tools",
+    "type": "icon"
+  },
+  {
+    "name": "GitHub",
+    "category": "DevOps & Tools",
+    "type": "icon"
+  },
+  {
+    "name": "GitLab",
+    "category": "DevOps & Tools",
+    "type": "icon"
+  },
+  {
+    "name": "Netlify",
+    "category": "DevOps & Tools",
+    "type": "icon"
+  },
+  {
+    "name": "Vercel",
+    "category": "DevOps & Tools",
+    "type": "icon"
+  },
+  {
+    "name": "Node.js",
+    "category": "Backend",
+    "type": "icon"
+  },
+  {
+    "name": "NestJS",
+    "category": "Backend",
+    "type": "icon"
+  },
+  {
+    "name": "Express",
+    "category": "Backend",
+    "type": "icon"
+  },
+  {
+    "name": "SpringBoot",
+    "category": "Backend",
+    "type": "icon"
+  },
+  {
+    "name": "WebSockets",
+    "category": "Backend",
+    "type": "icon",
+    "svg": "websockets.svg"
+  },
+  {
+    "name": "Jest",
+    "category": "Backend",
+    "type": "icon"
+  },
+  {
+    "name": "GraphQL",
+    "category": "Backend",
+    "type": "icon"
+  },
+  {
+    "name": "Python",
+    "category": "Programming Languages",
+    "type": "icon"
+  },
+  {
+    "name": "TypeScript",
+    "category": "Programming Languages",
+    "type": "icon"
+  },
+  {
+    "name": "JavaScript",
+    "category": "Programming Languages",
+    "type": "icon"
+  },
+  {
+    "name": "Java",
+    "category": "Programming Languages",
+    "type": "icon",
+    "svg": "java.svg",
+    "color": "#E76F00"
+  },
+  {
+    "name": "Swift",
+    "category": "Programming Languages",
+    "type": "icon"
+  },
+  {
+    "name": "Dart",
+    "category": "Programming Languages",
+    "type": "icon"
+  },
+  {
+    "name": "PyTorch",
+    "category": "Machine Learning",
+    "type": "icon"
+  },
+  {
+    "name": "SciKit-Learn",
+    "category": "Machine Learning",
+    "type": "icon",
+    "svg": "scikit-learn.svg",
+    "color": "original"
+  },
+  {
+    "name": "Streamlit",
+    "category": "Machine Learning",
+    "type": "icon"
+  },
+  {
+    "name": "LangChain",
+    "category": "Machine Learning",
+    "type": "icon"
+  },
+  {
+    "name": "React",
+    "category": "Frontend",
+    "type": "icon"
+  },
+  {
+    "name": "Next.js",
+    "category": "Frontend",
+    "type": "icon"
+  },
+  {
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "type": "icon"
+  },
+  {
+    "name": "JWT",
+    "category": "Frontend",
+    "type": "icon",
+    "svg": "jwt.svg"
+  }
+]

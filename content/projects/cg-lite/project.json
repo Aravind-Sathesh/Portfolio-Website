@@ -1,0 +1,14 @@
+{
+  "title": "CG Lite",
+  "tagline": "A fast, mobile-first CGPA tracker for BITS Pilani students, with a 700+ course catalog, semester trends, fully on-device storage and offline support.",
+  "category": "web_app",
+  "status": "completed",
+  "project_date": "2026-04-29",
+  "is_featured": true,
+  "display_order": 6,
+  "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS", "PWA", "Offline-First", "Service Worker", "Recharts"],
+  "repo_url": "https://github.com/Aravind-Sathesh/Lite",
+  "live_url": "https://cg-lite.netlify.app/",
+  "cover": "cover.png",
+  "gallery": ["calculator.png", "summary.png", "settings.png"]
+}
